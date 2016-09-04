@@ -11,7 +11,7 @@ ggplot(mpg, aes(displ, hwy, colour = drv)) +
   theme_bw()
 # Distribucion de millas por galon por numero de cilindros.
 ggplot(mpg, aes(as.factor(cyl), hwy, color = as.factor(cyl))) +
-  geom_boxplot(colour = gray(0.4)) +
+  geom_boxplot(colour = "green") +
   geom_jitter() +
   labs(title = "Distribucion de millas por galon en carretera por numero de cilindros",
        x = "Numero de cilindros",
